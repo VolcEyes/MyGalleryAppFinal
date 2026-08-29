@@ -1,0 +1,179 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:3810440697939320906",
+      "lastPropertyId": "6:3161013148042117669",
+      "name": "FaceEntity",
+      "properties": [
+        {
+          "id": "1:7556796846326980616",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:7453956018094388896",
+          "name": "faceVector",
+          "indexId": "2:7120295677810774263",
+          "type": 28,
+          "flags": 8
+        },
+        {
+          "id": "3:1620104294598833721",
+          "name": "boundingBox",
+          "type": 9
+        },
+        {
+          "id": "4:3305289648551494113",
+          "name": "imageId",
+          "indexId": "1:8813050843469643132",
+          "type": 11,
+          "flags": 520,
+          "relationTarget": "ImageEntity"
+        },
+        {
+          "id": "5:5983159629472776665",
+          "name": "faceImagePath",
+          "type": 9
+        },
+        {
+          "id": "6:3161013148042117669",
+          "name": "personId",
+          "indexId": "3:8809940920227643281",
+          "type": 11,
+          "flags": 520,
+          "relationTarget": "PersonEntity"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:2192951856395635762",
+      "lastPropertyId": "3:8396190981650998115",
+      "name": "ImageEntity",
+      "properties": [
+        {
+          "id": "1:4619849730561742544",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:2608670460654903940",
+          "name": "imageUri",
+          "type": 9
+        },
+        {
+          "id": "3:8396190981650998115",
+          "name": "dateModified",
+          "type": 6
+        }
+      ],
+      "relations": [
+        {
+          "id": "1:4870057968484322335",
+          "name": "faces",
+          "targetId": "1:3810440697939320906"
+        }
+      ]
+    },
+    {
+      "id": "3:7796290994217719466",
+      "lastPropertyId": "3:1098458487823958043",
+      "name": "PersonEntity",
+      "properties": [
+        {
+          "id": "1:5359801579162546648",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:1565727015299531705",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:1098458487823958043",
+          "name": "coverFaceImagePath",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "4:3862452737166899717",
+      "lastPropertyId": "5:7300800283925369814",
+      "name": "MergeHistoryEntity",
+      "properties": [
+        {
+          "id": "1:8995986739502594",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:8761882514082289310",
+          "name": "primaryPersonId",
+          "type": 6
+        },
+        {
+          "id": "3:134440975625225929",
+          "name": "primaryCoverPath",
+          "type": 9
+        },
+        {
+          "id": "4:6635309753934872308",
+          "name": "mergedCoverPath",
+          "type": 9
+        },
+        {
+          "id": "5:7300800283925369814",
+          "name": "faceIdsMoved",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "5:2489116273842450908",
+      "lastPropertyId": "3:5853204769890383419",
+      "name": "ContextImageEntity",
+      "properties": [
+        {
+          "id": "1:170790533098731482",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:8661140975373228726",
+          "name": "imageUri",
+          "type": 9
+        },
+        {
+          "id": "3:5853204769890383419",
+          "name": "clipVector",
+          "indexId": "4:2786759384332323755",
+          "type": 28,
+          "flags": 8
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "5:2489116273842450908",
+  "lastIndexId": "4:2786759384332323755",
+  "lastRelationId": "1:4870057968484322335",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}

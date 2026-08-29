@@ -1,0 +1,27 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+bpe_simple_vocab_16e6.txt
+scrfd_500m_bnkps.onnx
+text_model.ort
+vision_model.ort
+w600k_mbf.onnx
+# Too large for GitHub (100 MB limit)
+*.ort
+app/src/main/assets/bpe_simple_vocab_16e6.txt
+app/src/main/assets/scrfd_500m_bnkps.onnx
+app/src/main/assets/text_model.ort
+app/src/main/assets/vision_model.ort
+app/src/main/assets/w600k_mbf.onnx
